@@ -1,2 +1,2 @@
-beginner_tutorials:turtlesim_ex1
+RosBlindTurttleBot:RosPingPong:RosWallTurttleBot:beginner_tutorials:clfsm:gusimplewhiteboard:libclfsm:turtle_sensor_poster:turtlesim_ex1
 -DCATKIN_DEVEL_PREFIX=/home/jorge/Escritorio/Clase/Robotica/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jorge/Escritorio/Clase/Robotica/catkin_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/jorge/Escritorio/Clase/Robotica/catkin_ws/install
+
+Name: RosBlindTurttleBot
+Description: Description of RosBlindTurttleBot
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/jorge/Escritorio/Clase/Robotica/catkin_ws/install/lib -llibRosBlindTurttleBot
+Requires: 

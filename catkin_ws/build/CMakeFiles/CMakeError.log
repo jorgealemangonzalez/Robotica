@@ -51,3 +51,39 @@ make[1]: *** [cmTryCompileExec411265767] Error 1
 make: *** [cmTryCompileExec411265767/fast] Error 2
 
 
+Determining if the function LIBDISPATCH_RUNTIME_IN_LIBC exists failed with the following output:
+Change Dir: /home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1794389621/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1794389621.dir/build.make CMakeFiles/cmTryCompileExec1794389621.dir/build
+make[1]: se ingresa al directorio «/home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/CMakeFiles/CMakeTmp»
+/usr/bin/cmake -E cmake_progress_report /home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1794389621.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=LIBDISPATCH_RUNTIME_IN_LIBC   -o CMakeFiles/cmTryCompileExec1794389621.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1794389621
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1794389621.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=LIBDISPATCH_RUNTIME_IN_LIBC    CMakeFiles/cmTryCompileExec1794389621.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1794389621 -rdynamic 
+CMakeFiles/cmTryCompileExec1794389621.dir/CheckFunctionExists.c.o: En la función `main':
+CheckFunctionExists.c:(.text+0x15): referencia a `LIBDISPATCH_RUNTIME_IN_LIBC' sin definir
+collect2: error: ld returned 1 exit status
+make[1]: se sale del directorio «/home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/CMakeFiles/CMakeTmp»
+make[1]: *** [cmTryCompileExec1794389621] Error 1
+make: *** [cmTryCompileExec1794389621/fast] Error 2
+
+
+Performing C SOURCE FILE Test LIBDISPATCH_COMPILER_BLOCKS_SUPPORT_FOUND failed with the following output:
+Change Dir: /home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3021332022/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3021332022.dir/build.make CMakeFiles/cmTryCompileExec3021332022.dir/build
+make[1]: Entering directory `/home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3021332022.dir/src.c.o
+/usr/bin/cc   -DLIBDISPATCH_COMPILER_BLOCKS_SUPPORT_FOUND   -fblocks -o CMakeFiles/cmTryCompileExec3021332022.dir/src.c.o   -c /home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option '-fblocks'
+make[1]: Leaving directory `/home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/CMakeFiles/CMakeTmp'
+make[1]: *** [CMakeFiles/cmTryCompileExec3021332022.dir/src.c.o] Error 1
+make: *** [cmTryCompileExec3021332022/fast] Error 2
+
+Source file was:
+int main(void) { return 0; }

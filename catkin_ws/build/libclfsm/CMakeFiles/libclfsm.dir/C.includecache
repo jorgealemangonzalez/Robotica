@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jorge/Escritorio/Clase/Robotica/catkin_ws/src/libclfsm/include/stringConstants.h
+
+/home/jorge/Escritorio/Clase/Robotica/catkin_ws/src/libclfsm/src/stringConstants.c
+stringConstants.h
+/home/jorge/Escritorio/Clase/Robotica/catkin_ws/src/libclfsm/src/stringConstants.h
+

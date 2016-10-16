@@ -1,8 +1,8 @@
 #include "ros/ros.h"
 #include "geometry_msgs/Pose.h"
 #include "geometry_msgs/Twist.h"
-#include <sstream>
-
+//#include <sstream>
+#include <unistd.h>
 
 int main(int argc, char **argv)
 {
@@ -26,23 +26,24 @@ int main(int argc, char **argv)
 	float random = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/2));
 	msg.linear.x = random;
 	random = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/4)) - 2.0;	//random float betwen -2.0 and 2.0
-	msg.linear.y = random;
+	/*msg.linear.y = random;
 	random = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/4)) - 2.0;
 	msg.linear.z = random;
 	random = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/4)) - 2.0;
 	msg.angular.x = random;
 	random = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/4)) - 2.0;
 	msg.angular.y = random;
+	* */
 	random = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/4)) - 2.0;
 	msg.angular.z = random;
-	random = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/4)) - 2.0;
-	
+	std::cout<<"DEBUG : "<<random<<"\n";
 	
     //print the content of the message in the terminal
     std::stringstream ss;
-    ss << "Linear: " << msg.linear.x <<  " " << msg.linear.y << " " << msg.linear.z << "\nAngular: " << msg.angular.x << " " << msg.angular.y << " " << msg.angular.z << "\nRandom moves: "<<count+1;
-    ROS_INFO(ss.str());
-
+    std::cout << "Linear: " << msg.linear.x <<  " " << msg.linear.y << " " << msg.linear.z << "\nAngular: " << msg.angular.x << " " << msg.angular.y << " " << msg.angular.z << "\nRandom moves: "<<count+1<<"\n";
+    //ROS_INFO(ss.str());
+	
+	
     //publish the message
 	publi.publish(msg);
 	
@@ -50,6 +51,7 @@ int main(int argc, char **argv)
 
     loop_rate.sleep(); 
     count++;
+    usleep(1000000);
    }
    return 0;
 }

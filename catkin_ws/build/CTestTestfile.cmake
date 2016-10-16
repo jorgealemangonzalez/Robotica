@@ -5,5 +5,12 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
+SUBDIRS(gusimplewhiteboard)
+SUBDIRS(libclfsm)
+SUBDIRS(clfsm)
+SUBDIRS(RosBlindTurttleBot)
+SUBDIRS(RosPingPong)
 SUBDIRS(beginner_tutorials)
+SUBDIRS(turtle_sensor_poster)
+SUBDIRS(RosWallTurttleBot)
 SUBDIRS(turtlesim_ex1)

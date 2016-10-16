@@ -117,7 +117,14 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/gtest/cmake_install.cmake")
+  INCLUDE("/home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/gusimplewhiteboard/cmake_install.cmake")
+  INCLUDE("/home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/libclfsm/cmake_install.cmake")
+  INCLUDE("/home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/clfsm/cmake_install.cmake")
+  INCLUDE("/home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/RosBlindTurttleBot/cmake_install.cmake")
+  INCLUDE("/home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/RosPingPong/cmake_install.cmake")
   INCLUDE("/home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/beginner_tutorials/cmake_install.cmake")
+  INCLUDE("/home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/turtle_sensor_poster/cmake_install.cmake")
+  INCLUDE("/home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/RosWallTurttleBot/cmake_install.cmake")
   INCLUDE("/home/jorge/Escritorio/Clase/Robotica/catkin_ws/build/turtlesim_ex1/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
