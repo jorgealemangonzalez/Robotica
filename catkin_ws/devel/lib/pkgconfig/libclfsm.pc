@@ -1,8 +1,0 @@
-prefix=/home/jorge/Escritorio/Clase/Robotica/catkin_ws/devel
-
-Name: libclfsm
-Description: Description of libclfsm
-Version: 1.0.0
-Cflags: -I/home/jorge/Escritorio/Clase/Robotica/catkin_ws/src/libclfsm/include
-Libs: -L/home/jorge/Escritorio/Clase/Robotica/catkin_ws/devel/lib -llibclfsm
-Requires: gusimplewhiteboard

@@ -1,8 +1,0 @@
-prefix=/home/jorge/Escritorio/Clase/Robotica/catkin_ws/install
-
-Name: gusimplewhiteboard
-Description: Description of gusimplewhiteboard
-Version: 1.0.4
-Cflags: -I/home/jorge/Escritorio/Clase/Robotica/catkin_ws/install/include
-Libs: -L/home/jorge/Escritorio/Clase/Robotica/catkin_ws/install/lib -lgusimplewhiteboard
-Requires: 

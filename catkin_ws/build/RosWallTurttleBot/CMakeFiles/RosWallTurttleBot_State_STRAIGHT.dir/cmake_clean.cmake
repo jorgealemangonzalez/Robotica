@@ -1,8 +1,0 @@
-FILE(REMOVE_RECURSE
-  "CMakeFiles/RosWallTurttleBot_State_STRAIGHT.dir/src/State_STRAIGHT.mm.o"
-)
-
-# Per-language clean rules from dependency scanning.
-FOREACH(lang CXX)
-  INCLUDE(CMakeFiles/RosWallTurttleBot_State_STRAIGHT.dir/cmake_clean_${lang}.cmake OPTIONAL)
-ENDFOREACH(lang)

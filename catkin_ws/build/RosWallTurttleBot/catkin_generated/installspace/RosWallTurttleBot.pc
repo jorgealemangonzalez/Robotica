@@ -1,8 +1,0 @@
-prefix=/home/jorge/Escritorio/Clase/Robotica/catkin_ws/install
-
-Name: RosWallTurttleBot
-Description: Description of RosWallTurttleBot
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/jorge/Escritorio/Clase/Robotica/catkin_ws/install/lib -llibRosWallTurttleBot
-Requires: 

@@ -1,8 +1,0 @@
-prefix=/home/jorge/Escritorio/Clase/Robotica/catkin_ws/devel
-
-Name: turtle_sensor_poster
-Description: Description of turtle_sensor_poster
-Version: 0.0.0
-Cflags: -I/home/jorge/Escritorio/Clase/Robotica/catkin_ws/devel/include
-Libs: -L/home/jorge/Escritorio/Clase/Robotica/catkin_ws/devel/lib 
-Requires: message_generation roscpp rospy std_msgs
