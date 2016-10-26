@@ -11,3 +11,6 @@ ros::ServiceClient	client;	///<
 ros_webots_epuck_nxt_differential_robot::RsonarStatus	srvS;	///<
 bool	sonarNear;	///<
 ros::ServiceClient	clientS;	///<
+ros_webots_epuck_nxt_differential_robot::RencoderStatus	srvE;	///<
+bool	tooWheelSpins;	///<
+ros::ServiceClient	clientE;	///<

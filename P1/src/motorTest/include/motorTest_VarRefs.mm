@@ -17,5 +17,8 @@ ros::ServiceClient	&client= _m->client;	///<
 ros_webots_epuck_nxt_differential_robot::RsonarStatus	&srvS= _m->srvS;	///<
 bool	&sonarNear= _m->sonarNear;	///<
 ros::ServiceClient	&clientS= _m->clientS;	///<
+ros_webots_epuck_nxt_differential_robot::RencoderStatus	&srvE= _m->srvE;	///<
+bool	&tooWheelSpins= _m->tooWheelSpins;	///<
+ros::ServiceClient	&clientE= _m->clientE;	///<
 
 #pragma clang diagnostic pop
