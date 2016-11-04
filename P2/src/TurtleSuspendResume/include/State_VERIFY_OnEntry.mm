@@ -1,0 +1,1 @@
+ROS_INFO("in VERIFY" );

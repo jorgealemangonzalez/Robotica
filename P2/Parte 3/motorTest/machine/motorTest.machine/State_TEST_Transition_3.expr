@@ -1,0 +1,1 @@
+actualDistance >= (distanceToKeep - distanceMargin) && actualDistance <= (distanceToKeep + distanceMargin) 
