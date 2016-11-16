@@ -16,6 +16,10 @@ if(pushedLeft){
 	msg.leftMotor.power=50;
 	msg.rightMotor.power=-50;
 }
+if(lightChange){
+	msg.leftMotor.power=50;
+	msg.rightMotor.power=-50;
+}
 }
 msg.leftButtonSwitch.on=true;
 msg.rightButtonSwitch.on=true;

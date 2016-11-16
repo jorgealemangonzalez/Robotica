@@ -8,7 +8,7 @@ clientS = n->serviceClient<ros_webots_epuck_nxt_differential_robot::RsonarStatus
 clientE = n->serviceClient<ros_webots_epuck_nxt_differential_robot::RencoderStatus>("encoderstatus");
 clientL = n->serviceClient<ros_webots_epuck_nxt_differential_robot::RlightStatus>("lightstatus");
 lightInitial = 0 ; 
-lightTolerance = 10;
+lightTolerance = 100;
 
 if(clientL.call(srvL)){
 	lightInitial = srvL.response.light;

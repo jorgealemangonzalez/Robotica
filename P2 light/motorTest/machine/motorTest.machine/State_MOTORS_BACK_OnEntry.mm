@@ -5,9 +5,9 @@ msg.leftButtonSwitch.on=true;
 msg.rightButtonSwitch.on=true;
 robot_pub.publish(msg);
 if(lightChange){
-	timeBack = 200;
-	timeSpin = 1000; //Falta calcular para 180 grados 
+	timeBack = 500;
+	timeSpin = 600; //Falta calcular para 180 grados 
 }else{
-	 timeBack = 500;
-	 timeSpin = 500; //A lo mejor es mucho giro
+	 timeBack = 700;
+	 timeSpin = 200; //A lo mejor es mucho giro
 }
