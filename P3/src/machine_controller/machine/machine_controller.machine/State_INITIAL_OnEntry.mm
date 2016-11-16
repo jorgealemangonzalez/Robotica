@@ -1,0 +1,14 @@
+int argc = 0;
+static char *argv[] = { "machine_controller" } ;
+ros::init(argc, argv, "machine_controller");
+n=new ros::NodeHandle();
+robot_pub = n->advertise<ros_webots_epuck_nxt_differential_robot::Rrobot>("robot", 1000);
+client = n->serviceClient<ros_webots_epuck_nxt_differential_robot::RbuttonStatus>("buttonstatus");
+suspend("p2_part2");
+suspend("p2_part3");
+ros_webots_epuck_nxt_differential_robot::Rrobot msg;
+msg.leftMotor.power=0;
+msg.rightMotor.power=0;
+robot_pub.publish(msg);
+pushedLeft = 0;
+pushedRight = 0;
