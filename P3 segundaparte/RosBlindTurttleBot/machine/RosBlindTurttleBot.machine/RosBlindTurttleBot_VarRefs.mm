@@ -12,6 +12,5 @@ RosBlindTurttleBot *_m = static_cast<RosBlindTurttleBot *>(_machine);
 ros::NodeHandle*	&n= _m->n;	///<
 ros::Publisher	&chatter_pub= _m->chatter_pub;	///<
 geometry_msgs::Twist*	&msg= _m->msg;	///<
-ros::Rate*	&loop_rate= _m->loop_rate;	///<
 
 #pragma clang diagnostic pop

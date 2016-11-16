@@ -6,4 +6,3 @@
 ros::NodeHandle*	n;	///<
 ros::Publisher	chatter_pub;	///<
 geometry_msgs::Twist*	msg;	///<
-ros::Rate*	loop_rate;	///<

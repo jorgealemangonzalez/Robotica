@@ -5,8 +5,6 @@ std::strcpy (cstr, node_name.c_str());
 argv[0]= cstr;
 
 ros::init(argc, argv, "blindturtlebot");
-loop_rate = new ros::Rate(10);
-
 n=new ros::NodeHandle();
 msg= new  geometry_msgs::Twist();
 

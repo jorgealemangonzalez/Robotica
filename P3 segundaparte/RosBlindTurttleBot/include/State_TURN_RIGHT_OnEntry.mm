@@ -1,13 +1,4 @@
-int cont = 100;
-
-while(cont-- && ros::ok()){
-
 msg->linear.x = 0.0;
-msg->angular.z = -2.0;
-
-chatter_pub.publish(*msg);
+msg->angular.z = -1.0;
 
 
-ros::spinOnce();
-loop_rate->sleep();
-}
