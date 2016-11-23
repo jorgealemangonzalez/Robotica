@@ -20,5 +20,6 @@ ros::ServiceClient	&client= _m->client;	///<
 ros::ServiceClient	&clientS= _m->clientS;	///<
 ros_webots_epuck_nxt_differential_robot::RbuttonStatus	&srv= _m->srv;	///<
 ros_webots_epuck_nxt_differential_robot::RsonarStatus	&srvS= _m->srvS;	///<
+int	&waitTime= _m->waitTime;	///<
 
 #pragma clang diagnostic pop

@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 		noise_addition::NoisyFloat srv;
 		srv.request.original = atoll(argv[1]);
 		srv.request.mean = 0.0;
-		srv.request.stddvn = 1.0;
+		srv.request.stddvn = 20.0;
 		if (client.call(srv))
 		{
 			std::cout << srv.response.noisy << "\n";

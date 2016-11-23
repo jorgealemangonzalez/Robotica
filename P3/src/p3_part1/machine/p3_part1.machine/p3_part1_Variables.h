@@ -14,3 +14,4 @@ ros::ServiceClient	client;	///<
 ros::ServiceClient	clientS;	///<
 ros_webots_epuck_nxt_differential_robot::RbuttonStatus	srv;	///<
 ros_webots_epuck_nxt_differential_robot::RsonarStatus	srvS;	///<
+int	waitTime;	///<

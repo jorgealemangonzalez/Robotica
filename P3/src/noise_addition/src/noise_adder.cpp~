@@ -36,7 +36,7 @@ bool add_noise_sonar(	ros_webots_epuck_nxt_differential_robot::RsonarStatus::Req
 		ros_webots_epuck_nxt_differential_robot::RsonarStatus::Response &res)
 {
 	client.call(srv);
-	res.distance = srv.response.distance + BOX_MULLER::box_muller(0.0,100.0);
+	res.distance = srv.response.distance + BOX_MULLER::box_muller(0.0,40.0);
 	std::cout << res.distance << "\n";
 	return true;
 }

@@ -1,4 +1,8 @@
 ros_webots_epuck_nxt_differential_robot::Rrobot msg;
-msg.leftMotor.power= -(actualDistance - distanceToKeep - distanceMargin) * 0.8;
-msg.rightMotor.power= -(actualDistance - distanceToKeep - distanceMargin) * 0.8;
+
+double actual = distanceToKeep-actualDistance;
+int power = actual/distanceToKeep * 100;
+
+msg.leftMotor.power= -power;
+msg.rightMotor.power= -power;
 robot_pub.publish(msg);

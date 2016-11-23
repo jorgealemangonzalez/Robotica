@@ -1,5 +1,11 @@
 ros_webots_epuck_nxt_differential_robot::Rrobot msg;
-msg.leftMotor.power= (actualDistance - distanceToKeep + distanceMargin) * 0.5;
-msg.rightMotor.power= (actualDistance - distanceToKeep + distanceMargin) * 0.5;
+
+double actual = actualDistance-distanceToKeep;
+double maximo = 120;
+if(actual > maximo) actual = maximo;
+int power = actual/maximo * 100;
+
+msg.leftMotor.power= power;
+msg.rightMotor.power= power;
 robot_pub.publish(msg);
 ros::spinOnce();

@@ -134,21 +134,9 @@ bool NXT_interface :: value_sonarCallback(
              ros_webots_epuck_nxt_differential_robot::RsonarStatus::Response& res)
 {
 	ROS_INFO("Sonar");
-	noise_addition::NoisyFloat srv;
-	srv.request.original = sensor_sonar->getValue();
-	srv.request.mean = 0.0;
-	srv.request.stddvn = 1.0;
-	if (client.call(srv))
-		{
-			res.distance = srv.response.noisy;
-			ROS_INFO("Sonar: [%d]", res.distance);	
-			return true;
-	  	}
-		else
-		{
-	  		ROS_ERROR("Failed to call service noise_addition");
-	  		return false;
-	  	}
+	res.distance = sensor_sonar->getValue();
+	ROS_INFO("Sonar: [%d]", res.distance);	
+	return true;
 }
 
 bool NXT_interface :: value_encoderCallback(

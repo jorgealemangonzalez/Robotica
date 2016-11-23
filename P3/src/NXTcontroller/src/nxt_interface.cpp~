@@ -140,7 +140,7 @@ bool NXT_interface :: value_sonarCallback(
 	srv.request.stddvn = 1.0;
 	if (client.call(srv))
 		{
-			res.distance = srv.response.noisy;
+			res.distance = sensor_sonar->getValue();
 			ROS_INFO("Sonar: [%d]", res.distance);	
 			return true;
 	  	}
