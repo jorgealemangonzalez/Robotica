@@ -1,0 +1,6 @@
+<launch>
+  <!-- send pr2 urdf to param server -->
+  <group>
+    <param name="robot_description" command="$(find xacro)/xacro.py '$(find pr2_toto)/robots/pr2_no_arms_extra_laser.urdf.xacro'" />
+  </group>
+</launch>

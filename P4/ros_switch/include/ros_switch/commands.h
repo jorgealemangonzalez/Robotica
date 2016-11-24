@@ -1,0 +1,11 @@
+
+
+enum GazeboRobotMotionCommand //: int32_t
+{	GAZEBO_ROBOT_NO_COMMAND, // no command do not subsumme
+	GAZEBO_ROBOT_STOP,
+	GAZEBO_ROBOT_BACKWARDS,
+	GAZEBO_ROBOT_MOVE_FORWARD,
+	GAZEBO_ROBOT_TURN_LEFT,
+	GAZEBO_ROBOT_TURN_RIGHT
+};
+
