@@ -1,0 +1,1 @@
+after_ms(1000) && MIN(MIN(s1,s2),MIN(s3,s4)) > SAFE_ZONE
