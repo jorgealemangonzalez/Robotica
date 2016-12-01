@@ -1,5 +1,3 @@
-msg->command=GAZEBO_ROBOT_NO_COMMAND;
-command_pub.publish (*msg);
 client_doing.call(srv);
 doingNow= static_cast<GazeboRobotMotionCommand> (srv.response.command);
 

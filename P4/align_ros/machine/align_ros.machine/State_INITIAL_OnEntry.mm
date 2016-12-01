@@ -1,5 +1,5 @@
 //stop motors
-level=0;
+level=2;
 int argc = 0; static char *argv[1];
 std::string node_name="ros_align_node";
 char * cstr = new char [node_name.length()+1];
