@@ -1,2 +1,1 @@
-after_ms(3000)  
-
+after_ms(TURN_TIME)   

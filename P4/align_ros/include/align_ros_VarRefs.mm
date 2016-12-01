@@ -26,5 +26,9 @@ ros_switch::motion_command*	&msg= _m->msg;	///<
 ros::Publisher	&command_pub= _m->command_pub;	///<
 ros_pr2_fullrangelaserscan_to_sonar::toto_sonar_value	&sonar_srv= _m->sonar_srv;	///<
 ros_switch::toto_is_doing	&srv= _m->srv;	///<
+int	&s1= _m->s1;	///<
+int	&s2= _m->s2;	///<
+int	&s3= _m->s3;	///<
+int	&s4= _m->s4;	///<
 
 #pragma clang diagnostic pop

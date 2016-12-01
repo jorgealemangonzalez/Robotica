@@ -9,7 +9,7 @@
 #include "CLMacros.h"
 
 // #define DEBUG
-#define SAFE_ZONE 60
+#define SAFE_ZONE 80
 #define TURN_TIME 800
 
 #define STOPPED ((doingNow == GAZEBO_ROBOT_NO_COMMAND) || (doingNow == GAZEBO_ROBOT_STOP ))
@@ -17,6 +17,11 @@
 #define MIN(a,b) (a<b ? a : b)
 #define MAX(a,b) (a>b ? a : b)
 #define MINOFFOUR (a,b,c,d) (MIN(a,MIN(b,MIN(c,d))))
+
+
+
+
+
 
 
 

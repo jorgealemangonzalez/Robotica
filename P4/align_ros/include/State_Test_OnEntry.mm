@@ -6,7 +6,14 @@ client_doing.call(srv);
 doingNow= static_cast<GazeboRobotMotionCommand> (srv.response.command);
 
 //CUIDADO ESTOS CALL PUEDEN HACER QUE LA MAQUINA SE PARE
-
+sonar_srv.request.sonar_id=2;
+s5= (client_sonar.call(sonar_srv)) ? sonar_srv.response.value_cm   : 255;
+sonar_srv.request.sonar_id=3;
+s5= (client_sonar.call(sonar_srv)) ? sonar_srv.response.value_cm   : 255;
+sonar_srv.request.sonar_id=4;
+s5= (client_sonar.call(sonar_srv)) ? sonar_srv.response.value_cm   : 255;
+sonar_srv.request.sonar_id=1;
+s5= (client_sonar.call(sonar_srv)) ? sonar_srv.response.value_cm   : 255;
 sonar_srv.request.sonar_id=5;
 s5= (client_sonar.call(sonar_srv)) ? sonar_srv.response.value_cm   : 255;
 sonar_srv.request.sonar_id=6;

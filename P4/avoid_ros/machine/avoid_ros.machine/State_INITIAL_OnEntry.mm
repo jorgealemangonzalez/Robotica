@@ -1,7 +1,7 @@
 //stop motors
 level=1;
 int argc = 0; static char *argv[1];
-std::string node_name="ros_align_node";
+std::string node_name="ros_avoid_node";
 char * cstr = new char [node_name.length()+1];
 std::strcpy (cstr, node_name.c_str());
 argv[0]= cstr;
